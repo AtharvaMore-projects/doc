@@ -122,3 +122,34 @@ xlabel('Radial Distance (mm)');
 ylabel('Refractive Index');
 title('Graded-Index Profiles');
 legend('Step (\alpha=\infty)', 'Triangular (\alpha=1)', 'Parabolic (\alpha=2)'); grid on;
+
+
+disp comp OS
+1.	Open Optisytem
+2.	Default Library> Transmitter Library>User Defined bit sequence generators
+3.	Default Library> Transmitter Library>Pulse Generator>Optical Gaussian Pulse Generator
+4.	Default Library> Visualizers Library>Optical>Optical Time Domain Visualizer
+5.	Default Library> Visualizers Library>Optical>Optical Spectrum Analyser
+6.	Default Library> Optical Fiber Library>Optical Fiber.
+7.	Set the samples per bit and sequence length.
+8.	Save and run the simulation.
+9.	Observe output on Optical Visualiser before and after fiber
+10.	Measure total pulse spreading. 
+11.	Insert dispersion compensation component and set to negative compensation for the dispersion occurred.
+Observe output on Optical Visualiser after dispersion compensation component.
+
+FBG
+1.Open OptiSystem Simulation software. 
+2. Click on New File. 
+3. From the Component Library, select Default > Transmitters Library > Optical Sources. 
+Drag CW and place it in the layout. 
+4. Drag Uniform FBG from the Filters Library > Optical > FBG and place it in the layout. 
+5. Select optical power meters from Visualization Library and place it as shown in the figure 
+below. 
+6. Double click on FBG and set wavelength as 1550nm. 
+7. Double click on CW Laser and set power to 1mW and wavelength to 1510 nm. Simulate 
+it. 
+8. Observe the reading in power meter (Input power, Reflected Power and Transmitted 
+Power) and note down it. 
+9. Repeat simulation for 1510 nm, 1550 nm and 1570 nm. 
+10. Complete the Observation Table.
